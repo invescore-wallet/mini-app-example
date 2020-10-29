@@ -10,49 +10,49 @@
     "id": 2,
     "name": "Apple IPhone 6 plus",
     "img": "/assets/images/iphone7plus.jpg",
-    "price": 650000,
+    "price": 6500,
     "detail": "Хурууны даралтын хүчийг мэдрэх 3D Touch технологитой, 12 Megapixel хүчирхэг камертай. "
   },
   {
     "id": 3,
     "name": "Apple IPhone 7",
     "img": "/assets/images/iphone8.jpeg",
-    "price": 740000,
+    "price": 7400,
     "detail": "Өнгө: (RED), Гил хар, хар, саарал, алтлаг, алтлаг ягаан өнгөний сонголттой, Жин: 138 грамм."
   },
   {
     "id": 4,
     "name": "Apple IPhone 7 plus",
     "img": "/assets/images/iphone8.jpeg",
-    "price": 840000,
+    "price": 8400,
     "detail": "5.5 инч LED дэлгэц, 1920 х 1080 пиксл ( 401 ppi ) IPS LCD арын гэрэлтүүлэгч дэлгэц."
   },
   {
     "id": 5,
     "name": "Apple IPhone 8",
     "img": "/assets/images/iphone7plus.jpg",
-    "price": 825000,
+    "price": 8250,
     "detail": "Мэргэжлийн аппаратаар авсан мэт зураг авах шинэ камер,Wireless цэнэглэгчээр утсаа цэнэглэх боломжтой. "
   },
   {
     "id": 6,
     "name": "Apple IPhone 8 plus",
     "img": "/assets/images/iphone8.jpeg",
-    "price": 500000,
+    "price": 5000,
     "detail": "iPhone 8 Plus утсаар авсан зурган дээрээ цоо шинэ фильтрүүдийг ашиглах боломжтой."
   },
   {
     "id": 7,
     "name": "Apple IPhone X",
     "img": "/assets/images/iphone10.jpg",
-    "price": 738000,
+    "price": 138000,
     "detail": "Өмнөх загваруудаас iPhone X-ийн гадна дизайны анхаарал татах зүйл нь зурагддаггүй дэлгэц юм."
   },
   {
     "id": 8,
     "name": "Apple IPhone XR",
     "img": "/assets/images/iphone11.jpg",
-    "price": 884000,
+    "price": 184000,
     "detail": "Цоо шинэ Шингэн Retina дэлгэц— хамгийн дэвшилтэт LCD дэлгэц. Илүү хурдтай Face ID."
   },
   {

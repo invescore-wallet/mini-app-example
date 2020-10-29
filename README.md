@@ -1,5 +1,6 @@
 # Pocket-Merchant-Demo
 Энэхүү “Демо Апп” нь Покет аппликейшинд шинээр Мини Апп үүсгэх жишээ төсөл юм. Төслийн үндсэн бүтэц болон сервер талын кодчилолыг ойлгосноор “Мини-апп” -ийг Покет үйлчилгээнд хэрэгжүүлэх боломжтой болно.
+
 #### Системийн шаардлага
 1. **Сервер талын Javascript**
 	- Node v13.5.0 болон түүнээс дээш хувилбар
@@ -8,6 +9,7 @@
 	```sh
 	npm install
 	```
+
 #### Зааварчилгаа
 Төслийг ажиллуулах зааварчилгаа :
 - **Төслийг ажиллуулах**
@@ -15,19 +17,24 @@
 	```sh
 	node server.js
 	```
+
 #### Төслийн бүтэц
 * mini-app-example
  	* assets
- 	* controller
  	* views
     * server.js
     * settings.js
+    * client.js
+    * data.json
 1. **mini-app-exmaple** - фолдерт вебийн үндсэн код байршина.
 	*  **assets** - вебийн UI, UX responsive загвар
 	*  **assets/main.js** - веб клинт программ 
+	*  **assets/pocket.js** - webView-ээс Покет аппликейшин руу хандах Java script сан
 	*  **views** - вебийн харагдац
 2. **server.js** - merchant backend хүсэлт 
-3. **settings.js** - тохиргоо
+3. **client.js** - merchant backend нь CLIENT_ID, CLIENT_SECRET ашиглан token авах хүсэлт илгээх сан
+4. **settings.js** - тохиргоо
+
 #### Тохиргоо хийх
 Дараах ([settings.js](settings.js)) файл үүсгэн үндсэн тохиргоог хийнэ. **CLIENT_ID** , **CLIENT_SECRET** болон **POCKET_TOKEN_URL** pocket - оос өгнө.
 ```js
