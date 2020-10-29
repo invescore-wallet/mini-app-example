@@ -1,0 +1,10 @@
+.pocket-btn{
+  background: #E33054;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}

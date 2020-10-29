@@ -1,0 +1,13 @@
+.pocket-btn {
+  margin-left: 10px;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(180deg, #E33054, #BD1A3B), #E33054;
+  margin-right: 10px;
+  color: #fff;
+  outline: none;
+  cursor: pointer
+}
+.pocket-btn:hover {
+  background: #E33054;
+}
