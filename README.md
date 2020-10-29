@@ -29,14 +29,14 @@
 1. **mini-app-exmaple** - фолдерт вебийн үндсэн код байршина.
 	*  **assets** - вебийн UI, UX responsive загвар
 	*  **assets/main.js** - веб клинт программ 
-	*  **assets/pocket.js** - webView-ээс Покет аппликейшин руу хандах Java script сан
+	*  **assets/pocket.js** - webView-ээс Покет аппликейшин руу хандах Java script сан (sdk)
 	*  **views** - вебийн харагдац
-2. **server.js** - merchant backend хүсэлт 
+2. **server.js** - merchant backend сервер программ
 3. **client.js** - merchant backend нь CLIENT_ID, CLIENT_SECRET ашиглан token авах хүсэлт илгээх сан
 4. **settings.js** - тохиргоо
 
 #### Тохиргоо хийх
-Дараах ([settings.js](settings.js)) файл үүсгэн үндсэн тохиргоог хийнэ. **CLIENT_ID** , **CLIENT_SECRET** болон **POCKET_TOKEN_URL** pocket - оос өгнө.
+Дараах ([settings.js](settings.js)) файл үүсгэн үндсэн тохиргоог хийнэ. **CLIENT_ID** , **CLIENT_SECRET**, **POCKET_TOKEN_URL**, **INVOICE_CREATE_URL** хувьсагчуудыг тохируулна. Эдгээр хувьсагчийн утгуудыг Покет системд мерчантаар бүртгүүлэхдээ авна. 
 ```js
 const data = {
  port : 3000,
@@ -47,6 +47,7 @@ const data = {
 }
 module.exports.data = data;
 ```
+
 #### Үндсэн ажиллагаа
 1. Merchant service дуудах
 2. Access Token авах
