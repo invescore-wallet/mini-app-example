@@ -1,5 +1,5 @@
 # Pocket-Merchant-Demo
-Энэхүү “Демо Апп” нь Покет үйлчилгээнд шинээр “Апп” үүсгэх жишээ прожект юм. Прожектийн үндсэн бүтэц болон сервер талын кодчилолыг ойлгосноор “мини-апп” -ийг Покет үйлчилгээнд хэрэгжүүлэх боломжтой болно.
+Энэхүү “Демо Апп” нь Покет аппликейшинд шинээр Мини Апп үүсгэх жишээ төсөл юм. Төслийн үндсэн бүтэц болон сервер талын кодчилолыг ойлгосноор “Мини-апп” -ийг Покет үйлчилгээнд хэрэгжүүлэх боломжтой болно.
 #### Системийн шаардлага
 1. **Сервер талын Javascript**
 	- Node v13.5.0 болон түүнээс дээш хувилбар
@@ -8,25 +8,25 @@
 	```sh
 	npm install
 	```
-#### Зааварчилгааs
-Прожектийг ажиллуулах зааварчилгаа :
-- **Прожектийг ажиллуулах**
+#### Зааварчилгаа
+Төслийг ажиллуулах зааварчилгаа :
+- **Төслийг ажиллуулах**
 	> Үндсэн фолдерт терминалаас дараах коммандыг ажиллуулна.
 	```sh
 	node server.js
 	```
-#### Прожектийн бүтэц
-* merchant-example-project
- * assets
- * controller
- * views
-* server.js
-* settings.js
-1. **merchan-exmaple-project** - фолдерт вебийн үндсэн код байршина.
-	*  **assets** - вебийн UI, UX responsive стайл
-	*  **controller** - вебийн ажиллах зарчим , event
+#### Төслийн бүтэц
+* mini-app-example
+ 	* assets
+ 	* controller
+ 	* views
+    * server.js
+    * settings.js
+1. **mini-app-exmaple** - фолдерт вебийн үндсэн код байршина.
+	*  **assets** - вебийн UI, UX responsive загвар
+	*  **assets/main.js** - веб клинт программ 
 	*  **views** - вебийн харагдац
-2. **server.js** - merchant api хүсэлт
+2. **server.js** - merchant backend хүсэлт 
 3. **settings.js** - тохиргоо
 #### Тохиргоо хийх
 Дараах ([settings.js](settings.js)) файл үүсгэн үндсэн тохиргоог хийнэ. **CLIENT_ID** , **CLIENT_SECRET** болон **POCKET_TOKEN_URL** pocket - оос өгнө.
@@ -35,7 +35,8 @@ const data = {
  port : 3000,
  CLIENT_ID : <merchant_client_id>,
  CLIENT_SECRET : <merchant_client_secret_code>,
- POCKET_TOKEN_URL : <pocket_log_in_url>
+ POCKET_TOKEN_URL : <pocket_log_in_url>,
+ INVOICE_CREATE_URL: <invoice_creation_url>
 }
 module.exports.data = data;
 ```

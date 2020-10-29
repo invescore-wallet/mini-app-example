@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const mustacheExpress = require('mustache-express');
 
 const client = require('./client.js');
-const { PORT, CLIENT_ID, CLIENT_SECRET } = require('./settings.js');
+const { PORT, CLIENT_ID, CLIENT_SECRET, INVOICE_CREATE_URL } = require('./settings.js');
 
 const app = express();
 
@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 app.post('/total', async (req, res) => {
   try {
-    const { data } = await axios.post('https://service-staging.invescore.mn/merchant/consumer/invoice', {
+    const { data } = await axios.post(INVOICE_CREATE_URL, {
       amount: req.body.amount,
       consumerToken: req.body.consumerToken,
       info: 'Худалдан авсан барааны нэхэмжлэх',
