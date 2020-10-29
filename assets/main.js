@@ -3,18 +3,17 @@ $.fn.digits = function () {
     $(this).text($(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,'));
   })
 };
-
 let totalAmount = 0;
 let consumerToken = null;
-
+let consumerRefreshToken = null;
 $(() => {
-
   window.onload = function () {
     Pocket.getToken({}, (params) => {
       if (params.error) {
         console.log(params.errorMessage);
       } else {
         consumerToken = params.data.accessToken;
+        consumerRefreshToken = params.data.refreshToken;
       }
     });
   }
@@ -34,6 +33,7 @@ $(() => {
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         consumerToken,
+        consumerRefreshToken,
         amount: totalAmount,
       }),
       success({amount, info, terminalId, id}) {
@@ -59,10 +59,8 @@ $(() => {
       },
     })
   });
-
   $('.add').click((e) => {
     const price = parseInt($(e.target).siblings().data('price'));
-
     if ($(e.target).text() === 'Нэмэх') {
       totalAmount += price;
       $(e.target).removeClass('add-css').addClass('delete-css');
@@ -74,7 +72,6 @@ $(() => {
     }
     $('#total-sum').text(`${totalAmount} ₮`).digits();
   });
-
   function alertWindow(nr, isSuccess) {
     if (!isSuccess) {
       document.getElementById("btnCheck").innerHTML = "&#10005;"
