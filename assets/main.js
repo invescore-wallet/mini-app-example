@@ -15,6 +15,7 @@ $(() => {
         console.log(params.errorMessage);
       } else {
         consumerToken = params.data.accessToken;
+        console.log(Pocket.decodeToken(consumerToken));
       }
     });
   }
