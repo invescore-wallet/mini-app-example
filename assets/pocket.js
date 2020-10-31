@@ -37,11 +37,11 @@ window.Pocket = {
     },
 
     decodeToken(accessToken) {
-      if (!accessToken) throw new Error('AccessToken must not be empty!');
-      const parts = accessToken.split(".");
-      if (!parts[1]) throw new Error('Unrecognized AccessToken structure!');
-      if (typeof atob !== 'function') throw new Error('Browser is not supported!');
-      const payload = atob(parts[1]);
-      return payload;
+        if (!accessToken) throw new Error('AccessToken must not be empty!');
+        const parts = accessToken.split(".");
+        if (!parts[1]) throw new Error('Unrecognized AccessToken structure!');
+        if (typeof atob !== 'function') throw new Error('Browser is not supported!');
+        const payload = atob(parts[1]);
+        return payload;
     },
 };
